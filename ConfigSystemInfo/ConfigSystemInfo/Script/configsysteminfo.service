@@ -1,0 +1,9 @@
+﻿[Unit]
+Description= config system info (system time , system ip info)
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/dotnet  /home/kesshei/Desktop/net6.0/ConfigSystemInfo.dll
+
+[Install]
+WantedBy=multi-user.target
